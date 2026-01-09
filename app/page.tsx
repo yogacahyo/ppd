@@ -71,10 +71,11 @@ export default function Home() {
       transition: {
         x: {
           repeat: Infinity,
+          repeatType: "loop",
           duration: 20,
-          ease: "linear" as const,
+          ease: "linear",
         },
-      },
+      } as any,
     },
   };
 
