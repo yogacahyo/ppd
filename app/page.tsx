@@ -26,6 +26,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   BarChart,
   Bar,
@@ -42,6 +43,41 @@ import {
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Animation Variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const scaleIn = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  };
+
+  const marqueeVariants = {
+    animate: {
+      x: [0, -1000],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 20,
+          ease: "linear",
+        },
+      },
+    },
+  };
 
   const programs = [
     {
@@ -258,12 +294,17 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white">
+      {/* Hero Section / Jumbotron */}
+      <section className="relative overflow-hidden bg-brand-50 flex items-center min-h-[85vh]">
         <div className="absolute inset-0 bg-brand-50"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              className="z-10"
+            >
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-900 text-xs font-semibold mb-6">
                 <Award className="w-3 h-3 mr-2" />
                 Mitra Strategis Pemerintahan
@@ -290,22 +331,33 @@ export default function Home() {
                   Sejak 2021
                 </div>
               </div>
-            </div>
-            <div className="relative">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={scaleIn}
+              className="relative w-full h-full flex justify-center items-center"
+            >
               <div className="absolute -top-4 -left-4 w-72 h-72 bg-brand-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
               <div className="absolute -bottom-8 -right-4 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-              <img
-                src="https://placehold.co/800x600/1e3a8a/FFFFFF?text=PPD+Research+Activites"
-                alt="Research Activity"
-                className="relative rounded-2xl shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-500"
-              />
-            </div>
+              <div className="relative w-full aspect-video bg-brand-900 rounded-2xl shadow-2xl border-4 border-white flex items-center justify-center transform hover:scale-[1.02] transition-transform duration-500">
+                <h2 className="text-3xl font-bold text-white text-center">
+                  PPD Research Activites
+                </h2>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Stats - Floating */}
-      <div className="max-w-6xl mx-auto px-4 -mt-12 relative z-20">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className="max-w-6xl mx-auto px-4 -mt-12 relative z-20"
+      >
         <div className="bg-white rounded-xl shadow-xl border border-slate-100 p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center md:border-r border-slate-100">
             <div className="text-4xl font-bold text-brand-700 mb-1">35+</div>
@@ -326,7 +378,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* About Us Section */}
       <section
@@ -336,7 +388,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           {/* Sekilas */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
-            <div className="relative">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={scaleIn}
+              className="relative"
+            >
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
               <img
@@ -344,8 +402,13 @@ export default function Home() {
                 alt="Gedung PPD"
                 className="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
               <h2 className="text-sm font-bold text-brand-500 uppercase tracking-widest mb-2">
                 Tentang Kami
               </h2>
@@ -362,18 +425,18 @@ export default function Home() {
                 keunggulan dalam studi kebijakan publik yang berdampak pada
                 pembangunan yang berkelanjutan dan inklusif di seluruh negeri.
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Visi Misi */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-brand-900 rounded-3xl overflow-hidden">
-              <img
-                src="https://placehold.co/1200x600/1e293b/FFFFFF?text=Background+Boats"
-                alt="Background"
-                className="w-full h-full object-cover opacity-20"
-              />
-            </div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-brand-900 rounded-3xl overflow-hidden"></div>
 
             <div className="relative z-10 p-8 md:p-16">
               <div className="text-center mb-12">
@@ -419,14 +482,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Services Section */}
       <section id="layanan" className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mb-16"
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4">
               Layanan & Keahlian
             </h2>
@@ -434,11 +503,18 @@ export default function Home() {
               Beragam solusi riset dan pendampingan strategis untuk menjawab
               tantangan pembangunan daerah.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
             {programs.map((program, index) => (
-              <div
+              <motion.div
+                variants={fadeInUp}
                 key={index}
                 className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 hover:border-brand-300 transition-all duration-300"
               >
@@ -451,9 +527,9 @@ export default function Home() {
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
                   {program.desc}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -480,7 +556,13 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Chart 1 */}
-            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10"
+            >
               <h3 className="text-xl font-bold text-white mb-6 flex items-center">
                 <BarChart2 className="mr-3 text-brand-500" /> Pertumbuhan Proyek
               </h3>
@@ -523,10 +605,16 @@ export default function Home() {
                   </BarChart>
                 </ResponsiveContainer>
               </div>
-            </div>
+            </motion.div>
 
             {/* Chart 2 */}
-            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10"
+            >
               <h3 className="text-xl font-bold text-white mb-6 flex items-center">
                 <PieChart className="mr-3 text-emerald-400" /> Distribusi Klien
               </h3>
@@ -568,7 +656,7 @@ export default function Home() {
                   </RePieChart>
                 </ResponsiveContainer>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -588,7 +676,13 @@ export default function Home() {
                 publik.
               </p>
 
-              <div className="bg-brand-50 p-6 rounded-2xl border border-brand-100 mb-8">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className="bg-brand-50 p-6 rounded-2xl border border-brand-100 mb-8"
+              >
                 <h4 className="font-bold text-brand-900 mb-4 flex items-center">
                   <Award className="w-5 h-5 mr-2" /> Pimpinan
                 </h4>
@@ -639,10 +733,16 @@ export default function Home() {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </motion.div>
             </div>
             <div className="lg:col-span-7">
-              <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={staggerContainer}
+                className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8"
+              >
                 <h3 className="text-lg font-bold text-slate-800 mb-6 border-b pb-4">
                   Daftar Tim Ahli
                 </h3>
@@ -659,7 +759,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -743,33 +843,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clients - Marquee Style (Simulated) */}
+      {/* Clients - Marquee Style */}
       <section className="py-12 border-y border-slate-100 bg-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 mb-8 text-center">
           <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest">
             Mitra Strategis
           </h3>
         </div>
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Using Placeholders for Logos */}
-            <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl">
-              <Building className="mr-2" />
-              BAPPEDA MIMIKA
-            </div>
-            <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl">
-              <Building className="mr-2" />
-              KAB TANA TIDUNG
-            </div>
-            <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl">
-              <Building className="mr-2" />
-              DPRD BALIKPAPAN
-            </div>
-            <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl">
-              <Building className="mr-2" />
-              PEMKAB NABIRE
-            </div>
-          </div>
+        <div className="relative w-full overflow-hidden">
+          <motion.div
+            className="flex gap-16 w-max"
+            variants={marqueeVariants}
+            animate="animate"
+          >
+            {[...Array(2)].map((_, i) => (
+              <div
+                key={i}
+                className="flex gap-16 items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+              >
+                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
+                  <Building className="mr-2" />
+                  BAPPEDA MIMIKA
+                </div>
+                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
+                  <Building className="mr-2" />
+                  KAB TANA TIDUNG
+                </div>
+                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
+                  <Building className="mr-2" />
+                  DPRD BALIKPAPAN
+                </div>
+                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
+                  <Building className="mr-2" />
+                  PEMKAB NABIRE
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
