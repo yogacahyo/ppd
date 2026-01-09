@@ -206,8 +206,217 @@ export default function Home() {
     { name: "DPRD Balikpapan", value: 2 },
     { name: "Lainnya", value: 12 },
   ];
+  const partners = [
+    { name: "Pemkab Nabire", logo: "/images/partners/partner-1.png" },
+    { name: "DPRD Balikpapan", logo: "/images/partners/partner-2.png" },
+    { name: "Kab Tana Tidung", logo: "/images/partners/partner-3.png" },
+    { name: "Bappeda Mimika", logo: "/images/partners/partner-4.png" },
+    { name: "SIN", logo: "/images/partners/partner-5.png" },
+    { name: "Universitas Brawijaya", logo: "/images/partners/partner-6.png" },
+  ];
 
   const COLORS = ["#2563eb", "#0891b2", "#f59e0b", "#64748b"];
+
+  const projectHistory = [
+    // 2021
+    {
+      year: "2021",
+      title:
+        "Kajian Evaluasi RPJMD dan Renstra Perangkat Daerah Kabupaten Mimika",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2021",
+      title:
+        "Kajian Naskah Akademik Tentang Penyelenggaraan Reklame Di Kota Balikpapan",
+      client: "DPRD Kota Balikpapan",
+    },
+    {
+      year: "2021",
+      title:
+        "Kajian Analisis Kondisi Makro Ekonomi Daerah Kabupaten Tana Tidung 2022",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    // 2022
+    {
+      year: "2022",
+      title: "Penyusunan Naskah Akademik dan Ranperda Kota Balikpapan",
+      client: "DPRD Kota Balikpapan",
+    },
+    {
+      year: "2022",
+      title: "Review RPJMD Kabupaten Mimika 2020-2024",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2022",
+      title: "Penyusunan LAKIP Kabupaten Mimika 2021",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2022",
+      title:
+        "Penyusunan Analisis Kondisi Makro Kabupaten Tana Tidung Tahun 2023",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2022",
+      title:
+        "Penyusunan Laporan Isu Strategis Kabupaten Tana Tidung Tahun 2023",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    // 2023
+    {
+      year: "2023",
+      title: "Penyusunan Perubahan RPJMD Kabupaten Tana Tidung 2021-2026",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2023",
+      title:
+        "Pendampingan Perubahan Renstra Dinas Pendidikan dan Kebudayaan Kabupaten Tana Tidung 2021-2026",
+      client: "Disdikbud Kabupaten Tana Tidung",
+    },
+    {
+      year: "2023",
+      title:
+        "Penyusunan LAKIP Dinas Pendidikan dan Kebudayaan Kabupaten Tana Tidung 2022",
+      client: "Disdikbud Kabupaten Tana Tidung",
+    },
+    {
+      year: "2023",
+      title: "Evaluasi RKPD Kabupaten Mimika Tahun 2022",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2023",
+      title: "Evaluasi RPJMD Kabupaten Mimika Tahun 2020-2024",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2023",
+      title:
+        "Penyusunan Naskah Teknokratik RPJMD Kabupaten Mimika Tahun 2025-2029",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    // 2024
+    {
+      year: "2024",
+      title: "Penyusunan RKPD Kabupaten Tana Tidung Tahun 2025",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2024",
+      title: "Penyusunan Evaluasi RKPD Kabupaten Mimika 2023",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2024",
+      title:
+        "Penyusunan Rencana Induk Penelitian dan Pengembangan Kabupaten Tana Tidung 2025-2029",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2024",
+      title:
+        "Penyusunan Dokumen Percepatan Penurunan Kemiskinan Ekstrem Kabupaten Tana Tidung",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2024",
+      title: "Rancangan Awal Renstra Bappeda Kabupaten Mimika Tahun 2025-2029",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2024",
+      title: "Rancangan Awal RKPD 2026 Kabupaten Tana Tidung",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    // 2025
+    {
+      year: "2025",
+      title: "Rancangan Akhir RKPD 2026 Kabupaten Tana Tidung",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2025",
+      title: "RKPD Perubahan 2025 Kabupaten Tana Tidung",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+    {
+      year: "2025",
+      title: "Pengukuran Indeks Pembangunan Kabupaten Mimika",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Pengukuran IPEMAS, IDI, Angka Kriminalitas 2025 Kabupaten Mimika",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "RPJMD Kabupaten Mimika 2025-2029",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title:
+        "Penyusunan Renstra Bappeda dan Asistensi Renstra OPD 2025 Kabupaten Mimika",
+      client: "Bappeda Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Disparbudpora Kabupaten Mimika 2025-2029",
+      client: "Disparbudpora Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Badan Kesbangpol Kabupaten Mimika 2025-2029",
+      client: "Kesbangpol Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title:
+        "Penyusunan Renstra Dinas Lingkungan Hidup Kabupaten Mimika 2025-2029",
+      client: "Dinas Lingkungan Hidup Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Dinas Ketahanan Pangan 2025-2029",
+      client: "Dinas Ketahanan Pangan Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Dinas Sosial 2025-2029",
+      client: "Dinas Sosial Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Dinas Tenaga Kerja 2025-2029",
+      client: "Dinas Tenaga Kerja Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Dinas Perikanan 2025-2029",
+      client: "Dinas Perikanan Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan Renstra Distrik Iwaka 2025-2029",
+      client: "Distrik Iwaka Kabupaten Mimika",
+    },
+    {
+      year: "2025",
+      title: "Penyusunan KLHS RPJMD Kabupaten Nabire 2025-2029",
+      client: "Dinas Lingkungan Hidup Kabupaten Nabire",
+    },
+    // 2026
+    {
+      year: "2026",
+      title: "Penyusunan Rancangan Awal RKPD Tahun 2027 Kabupaten Tana Tidung",
+      client: "Bappeda dan Litbang Kabupaten Tana Tidung",
+    },
+  ].sort((a, b) => Number(b.year) - Number(a.year));
 
   return (
     <div className="font-sans text-slate-800 bg-slate-50 min-h-screen">
@@ -216,17 +425,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-3">
-              <div className="bg-brand-900 text-white p-2 rounded-lg">
-                <Building className="w-6 h-6" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-brand-900 leading-none">
-                  PPD
-                </h1>
-                <p className="text-xs text-brand-500 font-medium">
-                  Universitas Brawijaya
-                </p>
-              </div>
+              <img
+                src="/images/brand/logo-header.png"
+                alt="PPD Logo"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
@@ -479,6 +682,7 @@ export default function Home() {
                     </div>
                     <h4 className="text-3xl font-bold">VISI</h4>
                   </div>
+
                   <p className="text-lg leading-relaxed font-medium">
                     Menjadi pemimpin dalam penelitian dan pengembangan
                     perencanaan pembangunan dan kebijakan publik yang mendukung
@@ -680,6 +884,47 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mt-12 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden"
+          >
+            <div className="p-6 border-b border-white/10">
+              <h3 className="text-xl font-bold text-white flex items-center">
+                <FileText className="mr-3 text-brand-300" /> Histori Kerjasama
+              </h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-slate-300">
+                <thead className="bg-white/5 text-white uppercase font-bold text-xs">
+                  <tr>
+                    <th className="px-6 py-4">Tahun</th>
+                    <th className="px-6 py-4">Nama Pekerjaan/Proyek</th>
+                    <th className="px-6 py-4">Mitra/Klien</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10">
+                  {projectHistory.map((item, index) => (
+                    <tr
+                      key={index}
+                      className="hover:bg-white/5 transition-colors"
+                    >
+                      <td className="px-6 py-4 font-medium text-white">
+                        {item.year}
+                      </td>
+                      <td className="px-6 py-4">{item.title}</td>
+                      <td className="px-6 py-4 text-brand-100">
+                        {item.client}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -878,27 +1123,21 @@ export default function Home() {
             variants={marqueeVariants}
             animate="animate"
           >
-            {[...Array(2)].map((_, i) => (
-              <div
-                key={i}
-                className="flex gap-16 items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
-              >
-                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
-                  <Building className="mr-2" />
-                  BAPPEDA MIMIKA
-                </div>
-                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
-                  <Building className="mr-2" />
-                  KAB TANA TIDUNG
-                </div>
-                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
-                  <Building className="mr-2" />
-                  DPRD BALIKPAPAN
-                </div>
-                <div className="h-12 w-auto flex items-center font-bold text-slate-400 text-xl whitespace-nowrap">
-                  <Building className="mr-2" />
-                  PEMKAB NABIRE
-                </div>
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="flex gap-16 items-center flex-nowrap">
+                {partners.map((partner, idx) => (
+                  <div
+                    key={idx}
+                    className="h-24 w-auto flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                    title={partner.name}
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                ))}
               </div>
             ))}
           </motion.div>
@@ -909,9 +1148,12 @@ export default function Home() {
       <footer className="bg-brand-900 text-brand-100 pt-20 pb-10 px-4 sm:px-6 lg:px-8 text-sm">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6 text-white">
-              <Building className="w-8 h-8 text-brand-500" />
-              <span className="text-xl font-bold">PPD</span>
+            <div className="mb-6">
+              <img
+                src="/images/brand/logo-footer.png"
+                alt="PPD Logo"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="mb-6 leading-relaxed text-brand-100">
               Mitra terpercaya dalam riset kebijakan dan perencanaan pembangunan
