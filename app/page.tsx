@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   Users,
   Target,
@@ -23,6 +23,8 @@ import {
   ArrowUpRight,
   Linkedin,
   Instagram,
+  Menu,
+  X,
 } from "lucide-react";
 import {
   BarChart,
@@ -39,6 +41,8 @@ import {
 } from "recharts";
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const programs = [
     {
       icon: <FileText className="w-6 h-6" />,
@@ -166,6 +170,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
               <a href="#" className="hover:text-brand-700 transition-colors">
                 Beranda
@@ -192,8 +197,65 @@ export default function Home() {
                 Hubungi Kami
               </a>
             </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-slate-600 hover:text-brand-700 focus:outline-none"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-slate-100 absolute w-full z-50 shadow-lg">
+            <div className="px-4 pt-2 pb-4 space-y-1">
+              <a
+                href="#"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Beranda
+              </a>
+              <a
+                href="#tentang"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tentang
+              </a>
+              <a
+                href="#layanan"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Layanan
+              </a>
+              <a
+                href="#tim"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Tim Ahli
+              </a>
+              <a
+                href="#kontak"
+                className="block px-3 py-2 mt-4 text-center rounded-md text-base font-bold bg-brand-700 text-white hover:bg-brand-900"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Hubungi Kami
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -287,9 +349,6 @@ export default function Home() {
               <h2 className="text-sm font-bold text-brand-500 uppercase tracking-widest mb-2">
                 Tentang Kami
               </h2>
-              <h3 className="text-3xl md:text-4xl font-bold text-brand-900 mb-6">
-                SEKILAS
-              </h3>
               <p className="text-slate-600 leading-relaxed text-lg mb-6 text-justify">
                 Pusat Kajian Pembangunan Daerah (PPD) Fakultas Ilmu Administrasi
                 Universitas Brawijaya, sebuah lembaga riset yang didedikasikan
