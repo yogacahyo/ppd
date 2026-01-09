@@ -71,9 +71,8 @@ export default function Home() {
       transition: {
         x: {
           repeat: Infinity,
-          repeatType: "loop",
           duration: 20,
-          ease: "linear",
+          ease: "linear" as const,
         },
       },
     },
@@ -566,7 +565,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-6 flex items-center">
                 <BarChart2 className="mr-3 text-brand-500" /> Pertumbuhan Proyek
               </h3>
-              <div className="h-72 w-full">
+              <div className="h-72 w-full min-w-0">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={collaborationData}>
                     <CartesianGrid
@@ -618,7 +617,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-6 flex items-center">
                 <PieChart className="mr-3 text-emerald-400" /> Distribusi Klien
               </h3>
-              <div className="h-72 w-full flex items-center justify-center">
+              <div className="h-72 w-full min-w-0 flex items-center justify-center">
                 <ResponsiveContainer width="100%" height="100%">
                   <RePieChart>
                     <Pie
