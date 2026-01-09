@@ -605,6 +605,26 @@
     height: 100%;
   }
 
+  .min-h-\[8vh\] {
+    min-height: 8vh;
+  }
+
+  .min-h-\[50vh\] {
+    min-height: 50vh;
+  }
+
+  .min-h-\[70vh\] {
+    min-height: 70vh;
+  }
+
+  .min-h-\[75vh\] {
+    min-height: 75vh;
+  }
+
+  .min-h-\[80vh\] {
+    min-height: 80vh;
+  }
+
   .min-h-\[85vh\] {
     min-height: 85vh;
   }
@@ -1014,6 +1034,10 @@
     padding-top: calc(var(--spacing) * 8);
   }
 
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
@@ -1028,6 +1052,10 @@
 
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
+  }
+
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
 
   .text-center {
@@ -1532,6 +1560,13 @@
   @media (min-width: 64rem) {
     .lg\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 

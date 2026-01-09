@@ -79,6 +79,28 @@ export default function Home() {
     },
   };
 
+  const staggerServices = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const smoothFadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.25, 0.1, 0.25, 1.0] as any,
+      },
+    },
+  };
+
   const programs = [
     {
       icon: <FileText className="w-6 h-6" />,
@@ -295,9 +317,9 @@ export default function Home() {
       </nav>
 
       {/* Hero Section / Jumbotron */}
-      <section className="relative overflow-hidden bg-brand-50 flex items-center min-h-[85vh]">
+      <section className="relative overflow-hidden bg-brand-50 flex min-h-[75vh]">
         <div className="absolute inset-0 bg-brand-50"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 relative z-10 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial="hidden"
@@ -309,10 +331,10 @@ export default function Home() {
                 <Award className="w-3 h-3 mr-2" />
                 Mitra Strategis Pemerintahan
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-900 tracking-tight leading-tight mb-6">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-extrabold text-brand-900 tracking-tight leading-tight mb-6">
                 Membangun Daerah{" "}
                 <span className="text-brand-500">Inklusif</span> &{" "}
-                <span className="text-green-600">Berkelanjutan</span>
+                <span className="text-brand-700">Berkelanjutan</span>
               </h1>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
                 Pusat kajian riset dan inovasi kebijakan publik untuk mendukung
@@ -508,13 +530,13 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerServices}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {programs.map((program, index) => (
               <motion.div
-                variants={fadeInUp}
+                variants={smoothFadeInUp}
                 key={index}
                 className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 hover:border-brand-300 transition-all duration-300"
               >

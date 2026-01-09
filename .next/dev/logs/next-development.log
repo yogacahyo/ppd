@@ -670,3 +670,210 @@ Import trace:
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
+[00:43:32.178] Server  WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:43:32.179] Server  WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:43:33.091] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:43:33.091] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:43:33.091] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:43:33.091] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:45:07.614] Server  LOG     ✓ Compiled in 290ms
+[00:45:08.319] Browser ERROR   ./app/page.tsx:81:5
+Parsing ecmascript source code failed
+  79 |     },
+  80 |       } as any,
+> 81 |     },
+     |     ^
+  82 |   };
+  83 |
+  84 |   const staggerServices = {
+
+Unexpected token `}`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:08.450] Browser ERROR   ./app/page.tsx:81:5
+Parsing ecmascript source code failed
+  79 |     },
+  80 |       } as any,
+> 81 |     },
+     |     ^
+  82 |   };
+  83 |
+  84 |   const staggerServices = {
+
+Unexpected token `}`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:08.455] Browser ERROR   ./app/page.tsx:81:5
+Parsing ecmascript source code failed
+  79 |     },
+  80 |       } as any,
+> 81 |     },
+     |     ^
+  82 |   };
+  83 |
+  84 |   const staggerServices = {
+
+Unexpected token `}`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:24.572] Server  LOG     ✓ Compiled in 80ms
+[00:45:24.856] Browser ERROR   ./app/page.tsx:82:9
+Parsing ecmascript source code failed
+  80 |
+  81 |
+> 82 |   const staggerServices = {
+     |         ^^^^^^^^^^^^^^^
+  83 |     hidden: { opacity: 0 },
+  84 |     visible: {
+  85 |       opacity: 1,
+
+Unexpected token `staggerServices`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:25.446] Browser ERROR   ./app/page.tsx:82:9
+Parsing ecmascript source code failed
+  80 |
+  81 |
+> 82 |   const staggerServices = {
+     |         ^^^^^^^^^^^^^^^
+  83 |     hidden: { opacity: 0 },
+  84 |     visible: {
+  85 |       opacity: 1,
+
+Unexpected token `staggerServices`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:25.447] Browser ERROR   ./app/page.tsx:82:9
+Parsing ecmascript source code failed
+  80 |
+  81 |
+> 82 |   const staggerServices = {
+     |         ^^^^^^^^^^^^^^^
+  83 |     hidden: { opacity: 0 },
+  84 |     visible: {
+  85 |       opacity: 1,
+
+Unexpected token `staggerServices`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:45.069] Server  LOG     ✓ Compiled in 149ms
+[00:46:44.292] Server  WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:46:44.293] Server  WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:46:44.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:44.681] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:46:44.681] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:46:44.681] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:46:44.681] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:48:25.121] Server  LOG     ✓ Compiled in 68ms
+[00:48:27.411] Server  LOG     ✓ Compiled in 43ms
+[00:48:30.274] Server  WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:48:30.275] Server  WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:48:30.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:30.590] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:48:30.590] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:48:30.590] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:48:30.590] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[00:51:50.371] Server  LOG     ✓ Compiled in 166ms
+[00:53:11.432] Server  LOG     ✓ Compiled in 71ms
+[00:53:16.902] Server  LOG     ✓ Compiled in 62ms
+[00:53:20.217] Server  LOG     ✓ Compiled in 73ms
+[00:53:28.919] Server  LOG     ✓ Compiled in 79ms
+[00:53:38.520] Server  LOG     ✓ Compiled in 49ms
+[00:54:19.486] Server  LOG     ✓ Compiled in 48ms
+[00:54:21.991] Server  LOG     ✓ Compiled in 40ms
