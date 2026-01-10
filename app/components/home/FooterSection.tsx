@@ -128,7 +128,7 @@ export default function FooterSection() {
 
       <div className="border-t border-white/10 pt-8 text-center text-slate-500">
         <p>
-          © {new Date().getFullYear()} Pusat Kajian Perencanaan Pembangunan
+          © 2021-{new Date().getFullYear()} Pusat Kajian Perencanaan Pembangunan
           Daerah. All rights reserved.
         </p>
       </div>

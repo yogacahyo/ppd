@@ -181,10 +181,6 @@ export default function Home() {
                   Pelajari Lebih Lanjut
                   <ChevronRight className="w-4 h-4 ml-2" />
                 </a>
-                <div className="flex items-center text-slate-500 text-sm font-medium px-4">
-                  <Clock className="w-4 h-4 mr-2" />
-                  Sejak 2021
-                </div>
               </div>
             </div>
             <motion.div

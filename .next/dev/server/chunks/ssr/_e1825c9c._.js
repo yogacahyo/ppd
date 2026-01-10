@@ -100,9 +100,11 @@ function AboutSection() {
                             },
                             variants: fadeInUp,
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-md font-bold text-brand-500 uppercase tracking-widest mb-2",
-                                    children: "Tentang Kami"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeader, {
+                                    align: "left",
+                                    subtitle: "Sekilas PPD",
+                                    title: "Tentang Kami",
+                                    className: "!mb-6 bg-transparent"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/home/AboutSection.tsx",
                                     lineNumber: 50,
@@ -113,7 +115,7 @@ function AboutSection() {
                                     children: "Pusat Kajian Pembangunan Daerah (PPD) Fakultas Ilmu Administrasi Universitas Brawijaya, sebuah lembaga riset yang didedikasikan untuk memajukan pemahaman inovasi dalam perencanaan pembangunan dan kebijakan publik yang mendukung pembangunan daerah di Indonesia."
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -121,7 +123,7 @@ function AboutSection() {
                                     children: "Didirikan di bawah naungan Fakultas Ilmu Administrasi, Universitas Brawijaya, PPD berkomitmen untuk menjadi pusat keunggulan dalam studi kebijakan publik yang berdampak pada pembangunan yang berkelanjutan dan inklusif di seluruh negeri."
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -149,7 +151,7 @@ function AboutSection() {
                             className: "absolute inset-0 bg-brand-900 rounded-3xl overflow-hidden"
                         }, void 0, false, {
                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                            lineNumber: 77,
+                            lineNumber: 80,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -163,7 +165,7 @@ function AboutSection() {
                                             children: "VISI & MISI"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -171,13 +173,13 @@ function AboutSection() {
                                             children: "KAMI"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 87,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -195,12 +197,12 @@ function AboutSection() {
                                                                 className: "w-8 h-8 text-white"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                                lineNumber: 94,
+                                                                lineNumber: 97,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                            lineNumber: 93,
+                                                            lineNumber: 96,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -208,13 +210,13 @@ function AboutSection() {
                                                             children: "VISI"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                            lineNumber: 96,
+                                                            lineNumber: 99,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                    lineNumber: 92,
+                                                    lineNumber: 95,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -222,13 +224,13 @@ function AboutSection() {
                                                     children: "Menjadi pemimpin dalam penelitian dan pengembangan perencanaan pembangunan dan kebijakan publik yang mendukung transformasi pembangunan daerah yang inklusif dan berkelanjutan di Indonesia."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                    lineNumber: 99,
+                                                    lineNumber: 102,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 94,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -243,12 +245,12 @@ function AboutSection() {
                                                                 className: "w-8 h-8 text-white"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                                lineNumber: 111,
+                                                                lineNumber: 114,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                            lineNumber: 110,
+                                                            lineNumber: 113,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -256,13 +258,13 @@ function AboutSection() {
                                                             children: "MISI"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                            lineNumber: 113,
+                                                            lineNumber: 116,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 112,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -270,31 +272,31 @@ function AboutSection() {
                                                     children: "Menghasilkan riset-riset berkualitas, menyediakan wawasan kebijakan yang berbasis bukti, dan mengadvokasi praktek-praktek terbaik dalam pengelolaan publik dan pembangunan daerah."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 118,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 111,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 92,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/home/AboutSection.tsx",
-                            lineNumber: 79,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/home/AboutSection.tsx",
-                    lineNumber: 70,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this)
             ]

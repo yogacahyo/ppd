@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { BarChart2, PieChart } from "lucide-react";
+import SectionHeader from "../SectionHeader";
 
 // Lazy load chart components
 const ProjectChart = dynamic(() => import("../ProjectChart"), {
@@ -299,23 +300,12 @@ export default function StatsSection() {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-600/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="text-center mb-16"
-        >
-          <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-medium text-brand-100 mb-4 border border-white/10">
-            Portofolio
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Rekam Jejak & Dampak
-          </h2>
-          <p className="text-brand-100 max-w-2xl mx-auto text-lg leading-relaxed">
-            Data pertumbuhan proyek dan jangkauan kerjasama kami.
-          </p>
-        </motion.div>
+        <SectionHeader
+          theme="dark"
+          title="Rekam Jejak & Dampak"
+          subtitle="Portofolio"
+          description="Data pertumbuhan proyek dan jangkauan kerjasama kami."
+        />
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {/* Chart 1 */}
@@ -366,7 +356,8 @@ export default function StatsSection() {
                   Histori Kerjasama
                 </h3>
               </div>
-              <div className="overflow-x-auto">
+              {/* Desktop View - Table */}
+              <div className="hidden md:block overflow-x-auto">
                 <table className="w-full text-left text-sm text-slate-300">
                   <thead className="bg-white/5 text-brand-100 uppercase tracking-wider text-xs font-semibold">
                     <tr>
@@ -392,6 +383,31 @@ export default function StatsSection() {
                     ))}
                   </tbody>
                 </table>
+              </div>
+
+              {/* Mobile View - Cards */}
+              <div className="md:hidden space-y-4 p-4">
+                {currentItems.map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-white/5 border border-white/10 rounded-xl p-5 space-y-3"
+                  >
+                    <div className="flex justify-between items-start">
+                      <span className="text-brand-300 font-bold text-lg">
+                        {item.year}
+                      </span>
+                      <span className="text-xs font-medium text-brand-100 bg-white/10 px-2 py-1 rounded">
+                        Project
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-white text-base leading-snug mb-1">
+                        {item.title}
+                      </h4>
+                      <p className="text-sm text-slate-400">{item.client}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
               {/* Pagination Controls */}
               <div className="p-4 border-t border-white/10 flex justify-between items-center bg-white/5">

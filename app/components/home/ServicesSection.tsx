@@ -13,6 +13,7 @@ import {
   Award,
   ArrowUpRight,
 } from "lucide-react";
+import SectionHeader from "../SectionHeader";
 
 export default function ServicesSection() {
   const fadeInUp = {
@@ -88,21 +89,11 @@ export default function ServicesSection() {
   return (
     <section id="layanan" className="bg-gray-50 py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4">
-            Layanan & Keahlian
-          </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
-            Beragam solusi riset dan pendampingan strategis untuk menjawab
-            tantangan pembangunan daerah.
-          </p>
-        </motion.div>
+        <SectionHeader
+          title="Layanan & Keahlian"
+          subtitle="Layanan Kami"
+          description="Beragam solusi riset dan pendampingan strategis untuk menjawab tantangan pembangunan daerah."
+        />
 
         <motion.div
           initial="hidden"

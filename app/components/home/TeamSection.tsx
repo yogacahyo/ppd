@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Users } from "lucide-react";
+import SectionHeader from "../SectionHeader";
 
 export default function TeamSection() {
   const fadeInUp = {
@@ -63,16 +64,11 @@ export default function TeamSection() {
   return (
     <section id="tim" className="py-24 bg-white px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-brand-900 mb-6">
-            Tim Ahli & Praktisi
-          </h2>
-          <p className="text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Didukung oleh akademisi dan praktisi berpengalaman dari Fakultas
-            Ilmu Administrasi Universitas Brawijaya yang memiliki dedikasi
-            tinggi dalam pengembangan keilmuan dan praktik administrasi publik.
-          </p>
-        </div>
+        <SectionHeader
+          title="Tim Ahli & Praktisi"
+          subtitle="Tim Kami"
+          description="Didukung oleh akademisi dan praktisi berpengalaman dari Fakultas Ilmu Administrasi Universitas Brawijaya yang memiliki dedikasi tinggi dalam pengembangan keilmuan dan praktik administrasi publik."
+        />
 
         {/* Leaders Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">

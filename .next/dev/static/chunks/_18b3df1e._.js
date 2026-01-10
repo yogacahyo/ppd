@@ -160,33 +160,11 @@ function ServicesSection() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    initial: "hidden",
-                    whileInView: "visible",
-                    viewport: {
-                        once: true
-                    },
-                    variants: fadeInUp,
-                    className: "text-center mb-16",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-3xl md:text-4xl font-bold text-brand-900 mb-4",
-                            children: "Layanan & Keahlian"
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/home/ServicesSection.tsx",
-                            lineNumber: 98,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-slate-600 max-w-2xl mx-auto",
-                            children: "Beragam solusi riset dan pendampingan strategis untuk menjawab tantangan pembangunan daerah."
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/home/ServicesSection.tsx",
-                            lineNumber: 101,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeader, {
+                    title: "Layanan & Keahlian",
+                    subtitle: "Layanan Kami",
+                    description: "Beragam solusi riset dan pendampingan strategis untuk menjawab tantangan pembangunan daerah."
+                }, void 0, false, {
                     fileName: "[project]/app/components/home/ServicesSection.tsx",
                     lineNumber: 91,
                     columnNumber: 9
@@ -208,7 +186,7 @@ function ServicesSection() {
                                     children: program.icon
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/home/ServicesSection.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 110,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -216,7 +194,7 @@ function ServicesSection() {
                                     children: program.title
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/home/ServicesSection.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 113,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -224,18 +202,18 @@ function ServicesSection() {
                                     children: program.desc
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/home/ServicesSection.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 116,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/app/components/home/ServicesSection.tsx",
-                            lineNumber: 115,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/home/ServicesSection.tsx",
-                    lineNumber: 107,
+                    lineNumber: 97,
                     columnNumber: 9
                 }, this)
             ]

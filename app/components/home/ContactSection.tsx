@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
+import SectionHeader from "../SectionHeader";
 
 export default function ContactSection() {
   const [contactForm, setContactForm] = useState({
@@ -51,15 +52,11 @@ export default function ContactSection() {
         className="py-24 bg-slate-50 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4">
-              Hubungi Kami
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              Siap membantu kebutuhan riset dan kebijakan pembangunan daerah
-              Anda.
-            </p>
-          </div>
+          <SectionHeader
+            title="Hubungi Kami"
+            subtitle="Kontak"
+            description="Siap membantu kebutuhan riset dan kebijakan pembangunan daerah Anda."
+          />
 
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
             <div className="grid lg:grid-cols-2">

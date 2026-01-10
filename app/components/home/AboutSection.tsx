@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Target, FileText } from "lucide-react";
+import SectionHeader from "../SectionHeader";
 
 export default function AboutSection() {
   const fadeInUp = {
@@ -47,9 +48,12 @@ export default function AboutSection() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-md font-bold text-brand-500 uppercase tracking-widest mb-2">
-              Tentang Kami
-            </h2>
+            <SectionHeader
+              align="left"
+              subtitle="Sekilas PPD"
+              title="Tentang Kami"
+              className="!mb-6 bg-transparent"
+            />
             <p className="text-slate-600 leading-relaxed text-lg mb-6 text-justify">
               Pusat Kajian Pembangunan Daerah (PPD) Fakultas Ilmu Administrasi
               Universitas Brawijaya, sebuah lembaga riset yang didedikasikan
