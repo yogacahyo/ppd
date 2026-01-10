@@ -25,6 +25,7 @@ import {
   Instagram,
   Menu,
   X,
+  Send,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -43,6 +44,23 @@ import {
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSendMessage = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { name, subject, message } = contactForm;
+    const phone = "6281235835150";
+    const text = `Halo, nama saya ${name}. Mengenai ${subject}: ${message}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+  };
 
   // Animation Variants
   const fadeInUp = {
@@ -141,6 +159,30 @@ export default function Home() {
       icon: <Award className="w-6 h-6" />,
       title: "Capacity Building",
       desc: "Pelatihan intensif manajemen kebijakan publik bagi aparatur dan stakeholder terkait.",
+    },
+  ];
+
+  const leaders = [
+    {
+      name: "Prof. Dr. Abdullah Said, M.Si",
+      role: "Ketua PPD",
+      avatarName: "Abdullah+Said",
+      bg: "1e40af",
+      roleColor: "text-brand-600",
+    },
+    {
+      name: "Dr. Yuniadi Mayowan, S.Sos., M.AB",
+      role: "Bendahara",
+      avatarName: "Yuniadi+Mayowan",
+      bg: "d97706",
+      roleColor: "text-amber-600",
+    },
+    {
+      name: "Andhyka Muttaqin, S.AP., MPA",
+      role: "Sekretaris",
+      avatarName: "Andhyka+Muttaqin",
+      bg: "047857",
+      roleColor: "text-emerald-600",
     },
   ];
 
@@ -418,6 +460,14 @@ export default function Home() {
     },
   ].sort((a, b) => Number(b.year) - Number(a.year));
 
+  // Pagination Logic
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = projectHistory.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(projectHistory.length / itemsPerPage);
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
   return (
     <div className="font-sans text-slate-800 bg-slate-50 min-h-screen">
       {/* Navigation */}
@@ -425,17 +475,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-3">
-              <img
-                src="/images/brand/logo-header.png"
-                alt="PPD Logo"
-                className="h-12 w-auto object-contain"
-              />
+              <a href="#">
+                <img
+                  src="/images/brand/logo-header.png"
+                  alt="PPD Logo"
+                  className="h-12 w-auto object-contain cursor-pointer"
+                />
+              </a>
             </div>
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-              <a href="#" className="hover:text-brand-700 transition-colors">
-                Beranda
-              </a>
               <a
                 href="#tentang"
                 className="hover:text-brand-700 transition-colors"
@@ -450,6 +499,12 @@ export default function Home() {
               </a>
               <a href="#tim" className="hover:text-brand-700 transition-colors">
                 Tim Ahli
+              </a>
+              <a
+                href="#portofolio"
+                className="hover:text-brand-700 transition-colors"
+              >
+                Portofolio
               </a>
               <a
                 href="#kontak"
@@ -480,13 +535,6 @@ export default function Home() {
           <div className="md:hidden bg-white border-t border-slate-100 absolute w-full z-50 shadow-lg">
             <div className="px-4 pt-2 pb-4 space-y-1">
               <a
-                href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Beranda
-              </a>
-              <a
                 href="#tentang"
                 className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -506,6 +554,13 @@ export default function Home() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Tim Ahli
+              </a>
+              <a
+                href="#portofolio"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Portofolio
               </a>
               <a
                 href="#kontak"
@@ -759,8 +814,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Analytics Section */}
-      <section className="py-20 bg-brand-900 text-white relative overflow-hidden">
+      {/* Analytics/Portfolio Section */}
+      <section
+        id="portofolio"
+        className="py-20 bg-brand-900 text-white relative overflow-hidden"
+      >
         {/* Background Pattern */}
         <div
           className="absolute inset-0 opacity-10"
@@ -773,7 +831,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-medium text-brand-100 mb-4 border border-white/10">
-              Data &amp; Statistik
+              Portofolio
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Jejak Langkah & Dampak
@@ -907,7 +965,7 @@ export default function Home() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/10">
-                  {projectHistory.map((item, index) => (
+                  {currentItems.map((item, index) => (
                     <tr
                       key={index}
                       className="hover:bg-white/5 transition-colors"
@@ -924,111 +982,111 @@ export default function Home() {
                 </tbody>
               </table>
             </div>
+            {/* Pagination Controls */}
+            <div className="p-4 border-t border-white/10 flex justify-between items-center bg-white/5">
+              <span className="text-sm text-slate-300">
+                Halaman {currentPage} dari {totalPages}
+              </span>
+              <div className="flex space-x-2">
+                <button
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.max(prev - 1, 1))
+                  }
+                  disabled={currentPage === 1}
+                  className="px-3 py-1 text-sm bg-brand-700 text-white rounded hover:bg-brand-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  Previous
+                </button>
+                <button
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                  }
+                  disabled={currentPage === totalPages}
+                  className="px-3 py-1 text-sm bg-brand-700 text-white rounded hover:bg-brand-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* Team Section */}
+
       <section id="tim" className="py-24 bg-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-5">
-              <h2 className="text-3xl font-bold text-brand-900 mb-6">
-                Tim Ahli & Praktisi
-              </h2>
-              <p className="text-slate-600 mb-8 leading-relaxed">
-                Didukung oleh akademisi dan praktisi berpengalaman dari Fakultas
-                Ilmu Administrasi Universitas Brawijaya yang memiliki dedikasi
-                tinggi dalam pengembangan keilmuan dan praktik administrasi
-                publik.
-              </p>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-brand-900 mb-6">
+              Tim Ahli & Praktisi
+            </h2>
+            <p className="text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Didukung oleh akademisi dan praktisi berpengalaman dari Fakultas
+              Ilmu Administrasi Universitas Brawijaya yang memiliki dedikasi
+              tinggi dalam pengembangan keilmuan dan praktik administrasi
+              publik.
+            </p>
+          </div>
 
+          {/* Leaders Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            {leaders.map((leader, index) => (
               <motion.div
+                key={index}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-brand-50 p-6 rounded-2xl border border-brand-100 mb-8"
+                className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow"
               >
-                <h4 className="font-bold text-brand-900 mb-4 flex items-center">
-                  <Award className="w-5 h-5 mr-2" /> Pimpinan
-                </h4>
-                <ul className="space-y-4">
-                  <li className="flex gap-4">
-                    <img
-                      src="https://ui-avatars.com/api/?name=Abdullah+Said&background=1e40af&color=fff"
-                      alt="AS"
-                      className="w-10 h-10 rounded-full"
-                    />
-                    <div>
-                      <div className="font-bold text-slate-800">
-                        Prof. Dr. Abdullah Said, M.Si
-                      </div>
-                      <div className="text-xs text-brand-500 font-semibold uppercase">
-                        Ketua PPD
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <img
-                      src="https://ui-avatars.com/api/?name=Yuniadi+Mayowan&background=d97706&color=fff"
-                      alt="YM"
-                      className="w-10 h-10 rounded-full"
-                    />
-                    <div>
-                      <div className="font-bold text-slate-800">
-                        Dr. Yuniadi Mayowan, S.Sos., M.AB
-                      </div>
-                      <div className="text-xs text-amber-600 font-semibold uppercase">
-                        Bendahara
-                      </div>
-                    </div>
-                  </li>
-                  <li className="flex gap-4">
-                    <img
-                      src="https://ui-avatars.com/api/?name=Andhyka+Muttaqin&background=047857&color=fff"
-                      alt="AM"
-                      className="w-10 h-10 rounded-full"
-                    />
-                    <div>
-                      <div className="font-bold text-slate-800">
-                        Andhyka Muttaqin, S.AP., MPA
-                      </div>
-                      <div className="text-xs text-green-600 font-semibold uppercase">
-                        Sekretaris
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </motion.div>
-            </div>
-            <div className="lg:col-span-7">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={staggerContainer}
-                className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8"
-              >
-                <h3 className="text-lg font-bold text-slate-800 mb-6 border-b pb-4">
-                  Daftar Tim Ahli
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {experts.map((expert, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-center p-3 rounded-lg hover:bg-brand-50 transition-colors border border-transparent hover:border-brand-100"
-                    >
-                      <div className="w-2 h-2 rounded-full bg-brand-500 mr-3 flex-shrink-0"></div>
-                      <span className="text-sm font-medium text-slate-700">
-                        {expert}
-                      </span>
-                    </div>
-                  ))}
+                <div className="mb-6 relative">
+                  <div className="absolute inset-0 bg-brand-100 rounded-full blur-xl opacity-50"></div>
+                  <img
+                    src={`https://ui-avatars.com/api/?name=${leader.avatarName}&background=${leader.bg}&color=fff&size=128`}
+                    alt={leader.name}
+                    className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white"
+                  />
                 </div>
+                <h3 className="text-lg font-bold text-slate-800 mb-2">
+                  {leader.name}
+                </h3>
+                <span
+                  className={`text-sm font-bold uppercase tracking-wide ${leader.roleColor}`}
+                >
+                  {leader.role}
+                </span>
               </motion.div>
-            </div>
+            ))}
           </div>
+
+          {/* Experts List */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-200"
+          >
+            <div className="text-center mb-10">
+              <h3 className="text-xl font-bold text-slate-800 flex items-center justify-center">
+                <Users className="w-6 h-6 mr-3 text-brand-600" />
+                Daftar Tim Ahli
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {experts.map((expert, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-brand-300 hover:shadow-md transition-all"
+                >
+                  <div className="w-2 h-2 rounded-full bg-brand-500 mr-3 flex-shrink-0"></div>
+                  <span className="text-sm font-medium text-slate-700">
+                    {expert}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -1092,18 +1150,91 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
+                {/* Map Card */}
+                <div className="mt-8">
+                  <h4 className="font-bold text-slate-800 mb-4 flex items-center">
+                    <MapPin className="w-5 h-5 mr-2 text-brand-600" /> Lokasi
+                    Kami
+                  </h4>
+                  <div className="relative h-64 w-full bg-slate-200 rounded-xl overflow-hidden shadow-md border border-slate-200">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.469848447585!2d112.61196057524336!3d-7.95030099207412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788276d7eb437f%3A0xd8df90ce2e2f59f6!2sFaculty%20of%20Administrative%20Sciences!5e0!3m2!1sen!2ssg!4v1767947928114!5m2!1sen!2ssg"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="absolute inset-0 w-full h-full"
+                    ></iframe>
+                  </div>
+                </div>
               </div>
-              <div className="relative h-96 lg:h-auto bg-slate-200">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.469848447585!2d112.61196057524336!3d-7.95030099207412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788276d7eb437f%3A0xd8df90ce2e2f59f6!2sFaculty%20of%20Administrative%20Sciences!5e0!3m2!1sen!2ssg!4v1767947928114!5m2!1sen!2ssg"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="absolute inset-0 w-full h-full"
-                ></iframe>
+              <div className="p-8 lg:p-12 bg-slate-50">
+                <h3 className="text-2xl font-bold text-brand-900 mb-6">
+                  Kirim Pesan
+                </h3>
+                <form onSubmit={handleSendMessage} className="space-y-6">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Nama Lengkap
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition-all"
+                      placeholder="Masukkan nama anda"
+                      value={contactForm.name}
+                      onChange={(e) =>
+                        setContactForm({ ...contactForm, name: e.target.value })
+                      }
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Subjek
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition-all"
+                      placeholder="Subjek pesan"
+                      value={contactForm.subject}
+                      onChange={(e) =>
+                        setContactForm({
+                          ...contactForm,
+                          subject: e.target.value,
+                        })
+                      }
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Pesan
+                    </label>
+                    <textarea
+                      rows={4}
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition-all resize-none"
+                      placeholder="Tuliskan pesan anda..."
+                      value={contactForm.message}
+                      onChange={(e) =>
+                        setContactForm({
+                          ...contactForm,
+                          message: e.target.value,
+                        })
+                      }
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full py-4 bg-brand-700 hover:bg-brand-900 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center"
+                  >
+                    <Send className="w-5 h-5 mr-2" />
+                    Kirim Pesan via WhatsApp
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -1111,7 +1242,7 @@ export default function Home() {
       </section>
 
       {/* Clients - Marquee Style */}
-      <section className="py-12 border-y border-slate-100 bg-slate-50 overflow-hidden">
+      <section className="py-12 border-y border-slate-100 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 mb-8 text-center">
           <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest">
             Mitra Strategis
