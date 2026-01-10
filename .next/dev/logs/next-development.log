@@ -1242,3 +1242,1011 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:45:58.507] Server  LOG     ✓ Compiled in 41ms
 [00:47:12.243] Server  LOG     ✓ Compiled in 133ms
 [00:48:26.482] Server  LOG     ✓ Compiled in 35ms
+[00:53:37.220] Browser WARN    Image with src "/images/brand/logo-footer.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:56:11.790] Server  LOG     ✓ Compiled in 134ms
+[00:56:25.522] Server  LOG     ✓ Compiled in 51ms
+[00:57:52.736] Server  LOG     ✓ Compiled in 66ms
+[00:57:58.355] Server  LOG     ✓ Compiled in 27ms
+[00:58:11.330] Server  LOG     ✓ Compiled in 15ms
+[00:59:36.715] Server  LOG     ✓ Compiled in 129ms
+[00:59:37.199] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:37.494] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:38.249] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:38.492] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:39.391] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:39.493] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:40.605] Server  LOG     ✓ Compiled in 67ms
+[00:59:40.776] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:41.493] Browser ERROR   ./app/components/home/AboutSection.tsx:70:1
+Parsing ecmascript source code failed
+  68 |     </section>
+  69 |   );
+> 70 | }
+     | ^
+  71 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:55.000] Browser ERROR   ./app/components/home/AboutSection.tsx:69:1
+Parsing ecmascript source code failed
+  67 |     </section>
+  68 |   );
+> 69 | }
+     | ^
+  70 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:59:55.494] Browser ERROR   ./app/components/home/AboutSection.tsx:69:1
+Parsing ecmascript source code failed
+  67 |     </section>
+  68 |   );
+> 69 | }
+     | ^
+  70 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/components/home/AboutSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/home/AboutSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:00:45.104] Server  LOG     ✓ Compiled in 179ms
+[01:00:45.494] Browser ERROR   uncaughtError: ReferenceError: VisionMissionSection is not defined
+[01:00:46.071] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: VisionMissionSection
+[01:06:45.071] Server  LOG     ✓ Compiled in 268ms
+[01:06:45.085] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:06:45.724] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:45.724] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:45.724] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:45.724] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:46.007] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:46.169] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:06:47.115] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.115] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.115] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.115] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.492] Browser WARN    Image with src "/images/home/research.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:06:47.493] Browser WARN    Image with src "/images/brand/logo-footer.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:47.493] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.493] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.493] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:47.493] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:49.024] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="font-sans ...">
+            <nav>
+            <section>
+            <motion.div>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            ...
+              <TeamSection>
+                <section id="tim" className="py-24 bg-w...">
+                  <div className="max-w-7xl ...">
+                    <div>
+                    <div className="grid grid-...">
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Prof. Dr. Abdullah Said, M.Si"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah-said.png&w=128&q=75 1x, /_next/im..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah.png&w=128&q=75 1x, /_next/image?u..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah-said.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Dr. Yuniadi Mayowan, S.Sos., M.AB"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi-mayowan.png&w=128&q=75 1x, /_next/..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi.png&w=128&q=75 1x, /_next/image?ur..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi-mayowan.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Andhyka Muttaqin, S.AP., MPA"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka-muttaqin.png&w=128&q=75 1x, /_next..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka.png&w=128&q=75 1x, /_next/image?ur..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka-muttaqin.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                    ...
+            <LoadableComponent>
+              <ContactSection>
+                <section id="kontak" className="py-24 bg-s...">
+                  <div className="max-w-7xl ...">
+                    <div>
+                    <div className="bg-white r...">
+                      <div className="grid lg:gr...">
+                        <div>
+                        <div className="p-8 lg:p-1...">
+                          <h3>
+                          <form onSubmit={function handleSendMessage} className="space-y-6">
+                            <div>
+                            <div>
+                            <div>
+                              <label>
+                              <textarea
++                               rows={4}
+-                               rows="10"
+                                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring..."
+                                placeholder="Tuliskan pesan anda..."
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                              >
+                            ...
+                ...
+            ...
+    ...
+
+[01:06:49.025] Browser WARN    Image with src "/images/home/research.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:06:49.170] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/#portofolio" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <div className="font-sans ...">
+                      <nav>
+                      <section>
+                      <motion.div>
+                      <LoadableComponent>
+                        <Suspense fallback={<loading>}>
+                          <AboutSection>
+                            <section
+                              id="tentang"
++                             className="py-20 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden"
+-                             className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden"
+                            >
+                              <div className="max-w-7xl ...">
+                                <div className="grid lg:gr...">
+                                  ...
+                                    <div className="relative" style={{opacity:0, ...}} ...>
+                                      <div>
+                                      <div>
+                                      <img
+                                        alt="Gedung PPD"
+                                        fetchPriority={undefined}
+                                        loading="lazy"
+                                        width={600}
+                                        height={500}
+                                        decoding="async"
+                                        data-nimg="1"
+                                        className="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
+                                        style={{color:"transparent"}}
+                                        sizes={undefined}
++                                       srcSet={"/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x700%2Fe2e8f0%2F1e2..."}
+-                                       srcSet={"/_next/image?url=%2Fimages%2Fabout%2Fbuilding.png&w=640&q=75 1x, /_n..."}
++                                       src={"/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x700%2Fe2e8f0%2F1e293b..."}
+-                                       src={"/_next/image?url=%2Fimages%2Fabout%2Fbuilding.png&w=1200&q=75"}
+                                        ref={function}
+                                        onLoad={function onLoad}
+                                        onError={function onError}
+                                      >
+                                  <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                                    <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                      <h2
++                                       className="text-sm font-bold text-brand-500 uppercase tracking-widest mb-2"
+-                                       className="text-md font-bold text-brand-500 uppercase tracking-widest mb-2"
+                                      >
++                                       Tentang Kami
+                                      ...
+                                ...
+                      ...
+              ...
+            ...
+
+[01:06:49.352] Browser WARN    Image with src "/images/about/building.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:49.632] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:49.696] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:49.696] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:06:49.696] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:07.908] Server  LOG     ✓ Compiled in 87ms
+[01:07:18.223] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="font-sans ...">
+            <nav>
+            <section>
+            <motion.div>
+            <LoadableComponent>
+            <LoadableComponent>
+            <LoadableComponent>
+            ...
+              <TeamSection>
+                <section id="tim" className="py-24 bg-w...">
+                  <div className="max-w-7xl ...">
+                    <div>
+                    <div className="grid grid-...">
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Prof. Dr. Abdullah Said, M.Si"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah-said.png&w=128&q=75 1x, /_next/im..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah.png&w=128&q=75 1x, /_next/image?u..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah-said.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Dr. Yuniadi Mayowan, S.Sos., M.AB"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi-mayowan.png&w=128&q=75 1x, /_next/..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi.png&w=128&q=75 1x, /_next/image?ur..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi-mayowan.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Andhyka Muttaqin, S.AP., MPA"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka-muttaqin.png&w=128&q=75 1x, /_next..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka.png&w=128&q=75 1x, /_next/image?ur..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka-muttaqin.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                    ...
+            <LoadableComponent>
+              <ContactSection>
+                <section id="kontak" className="py-24 bg-s...">
+                  <div className="max-w-7xl ...">
+                    <div>
+                    <div className="bg-white r...">
+                      <div className="grid lg:gr...">
+                        <div>
+                        <div className="p-8 lg:p-1...">
+                          <h3>
+                          <form onSubmit={function handleSendMessage} className="space-y-6">
+                            <div>
+                            <div>
+                            <div>
+                              <label>
+                              <textarea
++                               rows={4}
+-                               rows="10"
+                                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring..."
+                                placeholder="Tuliskan pesan anda..."
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                              >
+                            ...
+                ...
+            ...
+    ...
+
+[01:07:18.223] Browser WARN    Image with src "/images/home/research.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:07:18.223] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:18.223] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:18.223] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:18.223] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:18.327] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="font-sans ...">
+            <nav>
+            <section>
+            <motion.div>
+            <LoadableComponent>
+              <Suspense fallback={<loading>}>
+                <AboutSection>
+                  <section id="tentang" className="py-20 px-4...">
+                    <div className="max-w-7xl ...">
+                      <div className="grid lg:gr...">
+                        <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                          <div className="relative" style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                            <div>
+                            <div>
+                            <img
+                              alt="Gedung PPD"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={600}
+                              height={500}
+                              decoding="async"
+                              data-nimg="1"
+                              className="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x700%2Fe2e8f0%2F1e293b%3Ftext..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fabout%2Fbuilding.png&w=640&q=75 1x, /_next/image?..."}
++                             src={"/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x700%2Fe2e8f0%2F1e293b%3Ftext%3D..."}
+-                             src={"/_next/image?url=%2Fimages%2Fabout%2Fbuilding.png&w=1200&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                        <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                          <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                            <h2
++                             className="text-sm font-bold text-brand-500 uppercase tracking-widest mb-2"
+-                             className="text-md font-bold text-brand-500 uppercase tracking-widest mb-2"
+                            >
++                             Tentang Kami
+                            ...
+                      ...
+            ...
+    ...
+
+[01:07:19.214] Browser WARN    Image with src "/images/about/building.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:37.649] Server  LOG     ✓ Compiled in 121ms
+[01:07:43.410] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="font-sans ...">
+            <nav>
+            <section>
+            <motion.div>
+            <LoadableComponent>
+            <LoadableComponent>
+              <ServicesSection>
+                <section id="layanan" className="py-24 px-4...">
+                  <div className="max-w-7xl ...">
+                    <motion.div>
+                    <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                      <div className="grid md:gr..." style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+                        <motion.div variants={{hidden:{...}, ...}} className="bg-white p...">
+                          <div
++                           className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hove..."
+-                           className="bg-gray-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl ho..."
+                            style={{opacity:0,transform:"translateY..."}}
+                            ref={function useMotionRef.useCallback}
+                          >
+            <LoadableComponent>
+            ...
+              <TeamSection>
+                <section id="tim" className="py-24 bg-w...">
+                  <div className="max-w-7xl ...">
+                    <div>
+                    <div className="grid grid-...">
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Prof. Dr. Abdullah Said, M.Si"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah-said.png&w=128&q=75 1x, /_next/im..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah.png&w=128&q=75 1x, /_next/image?u..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah-said.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fabdullah.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Dr. Yuniadi Mayowan, S.Sos., M.AB"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi-mayowan.png&w=128&q=75 1x, /_next/..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi.png&w=128&q=75 1x, /_next/image?ur..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi-mayowan.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fyuniadi.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                        <div className="bg-white r..." style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                          <div className="mb-6 relative">
+                            <div>
+                            <img
+                              alt="Andhyka Muttaqin, S.AP., MPA"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={128}
+                              height={128}
+                              decoding="async"
+                              data-nimg="1"
+                              className="w-32 h-32 rounded-full relative z-10 shadow-md border-4 border-white object-c..."
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka-muttaqin.png&w=128&q=75 1x, /_next..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka.png&w=128&q=75 1x, /_next/image?ur..."}
++                             src={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka-muttaqin.png&w=256&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Fteam%2Fandhyka.png&w=256&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                    ...
+            <LoadableComponent>
+              <ContactSection>
+                <section id="kontak" className="py-24 bg-s...">
+                  <div className="max-w-7xl ...">
+                    <div>
+                    <div className="bg-white r...">
+                      <div className="grid lg:gr...">
+                        <div>
+                        <div className="p-8 lg:p-1...">
+                          <h3>
+                          <form onSubmit={function handleSendMessage} className="space-y-6">
+                            <div>
+                            <div>
+                            <div>
+                              <label>
+                              <textarea
++                               rows={4}
+-                               rows="10"
+                                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring..."
+                                placeholder="Tuliskan pesan anda..."
+                                value=""
+                                onChange={function onChange}
+                                required={true}
+                              >
+                            ...
+                ...
+            ...
+    ...
+
+[01:07:43.410] Browser WARN    Image with src "/images/home/research.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:07:43.410] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+        <Home params={Promise} searchParams={Promise}>
+          <div className="font-sans ...">
+            <nav>
+            <section>
+            <motion.div>
+            <LoadableComponent>
+              <Suspense fallback={<loading>}>
+                <AboutSection>
+                  <section id="tentang" className="py-20 px-4...">
+                    <div className="max-w-7xl ...">
+                      <div className="grid lg:gr...">
+                        <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                          <div className="relative" style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                            <div>
+                            <div>
+                            <img
+                              alt="Gedung PPD"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={600}
+                              height={500}
+                              decoding="async"
+                              data-nimg="1"
+                              className="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
+                              style={{color:"transparent"}}
+                              sizes={undefined}
++                             srcSet={"/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x700%2Fe2e8f0%2F1e293b%3Ftext..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Fabout%2Fbuilding.png&w=640&q=75 1x, /_next/image?..."}
++                             src={"/_next/image?url=https%3A%2F%2Fplacehold.co%2F600x700%2Fe2e8f0%2F1e293b%3Ftext%3D..."}
+-                             src={"/_next/image?url=%2Fimages%2Fabout%2Fbuilding.png&w=1200&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                        <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} ...>
+                          <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                            <h2
++                             className="text-sm font-bold text-brand-500 uppercase tracking-widest mb-2"
+-                             className="text-md font-bold text-brand-500 uppercase tracking-widest mb-2"
+                            >
++                             Tentang Kami
+                            ...
+                      ...
+            ...
+    ...
+
+[01:07:43.410] Browser WARN    Image with src "/images/about/building.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:07:43.410] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:43.410] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:43.410] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:43.410] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:07:55.672] Server  LOG     ✓ Compiled in 32ms
+[01:08:25.676] Server  LOG     ✓ Compiled in 34ms
+[01:08:29.576] Server  LOG     ✓ Compiled in 14ms
+[01:08:30.846] Server  LOG     ✓ Compiled in 14ms
+[01:09:03.771] Browser WARN    Image with src "/images/brand/logo-footer.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:09:20.091] Server  LOG     ✓ Compiled in 70ms
+[01:09:34.618] Server  LOG     ✓ Compiled in 27ms
+[01:09:51.305] Server  LOG     ✓ Compiled in 36ms
+[01:09:55.321] Server  LOG     ✓ Compiled in 17ms
+[01:10:03.753] Server  LOG     ✓ Compiled in 31ms
+[01:10:04.827] Server  LOG     ✓ Compiled in 18ms
+[01:10:12.079] Server  LOG     ✓ Compiled in 31ms
+[01:11:17.475] Browser WARN    Image with src "/images/about/building.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:11:28.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:28.451] Browser WARN    Image with src "/images/home/research.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:11:28.451] Browser WARN    Image with src "/images/about/building.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:11:28.451] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:11:28.451] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:11:28.451] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:11:28.451] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[01:11:42.033] Browser WARN    Image with src "/images/brand/logo-footer.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

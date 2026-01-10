@@ -47,7 +47,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 className="text-sm font-bold text-brand-500 uppercase tracking-widest mb-2">
+            <h2 className="text-md font-bold text-brand-500 uppercase tracking-widest mb-2">
               Tentang Kami
             </h2>
             <p className="text-slate-600 leading-relaxed text-lg mb-6 text-justify">

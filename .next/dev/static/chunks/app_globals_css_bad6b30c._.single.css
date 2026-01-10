@@ -80,6 +80,8 @@
     --color-slate-700: #314158;
     --color-slate-800: #1d293d;
     --color-slate-900: #0f172b;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
     --color-white: #fff;
     --spacing: .25rem;
     --container-lg: 32rem;
@@ -152,6 +154,8 @@
       --color-slate-700: lab(26.9569% -1.47016 -15.6993);
       --color-slate-800: lab(16.132% -.318035 -14.6672);
       --color-slate-900: lab(7.78673% 1.82345 -15.0537);
+      --color-gray-50: lab(98.2596% -.247031 -.706708);
+      --color-gray-100: lab(96.1596% -.0823438 -1.13575);
     }
   }
 }
@@ -1026,6 +1030,14 @@
 
   .bg-brand-900 {
     background-color: #0f2854;
+  }
+
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
 
   .bg-green-200 {
