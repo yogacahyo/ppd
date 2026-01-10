@@ -171,7 +171,7 @@ export default function ContactSection() {
                       Pesan
                     </label>
                     <textarea
-                      rows={4}
+                      rows={10}
                       className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition-all resize-none"
                       placeholder="Tuliskan pesan anda..."
                       value={contactForm.message}

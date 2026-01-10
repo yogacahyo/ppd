@@ -1232,3 +1232,13 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
+[00:44:17.971] Server  LOG     ✓ Compiled in 160ms
+[00:44:24.593] Server  LOG     ✓ Compiled in 29ms
+[00:44:25.817] Server  LOG     ✓ Compiled in 47ms
+[00:44:27.546] Server  LOG     ✓ Compiled in 47ms
+[00:44:40.579] Server  LOG     ✓ Compiled in 32ms
+[00:44:43.233] Server  LOG     ✓ Compiled in 20ms
+[00:44:44.619] Server  LOG     ✓ Compiled in 17ms
+[00:45:58.507] Server  LOG     ✓ Compiled in 41ms
+[00:47:12.243] Server  LOG     ✓ Compiled in 133ms
+[00:48:26.482] Server  LOG     ✓ Compiled in 35ms
