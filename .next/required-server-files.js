@@ -46,7 +46,16 @@ self.__SERVER_FILES_MANIFEST={
           "search": ""
         }
       ],
-      "remotePatterns": [],
+      "remotePatterns": [
+        {
+          "protocol": "https",
+          "hostname": "placehold.co"
+        },
+        {
+          "protocol": "https",
+          "hostname": "ui-avatars.com"
+        }
+      ],
       "qualities": [
         75
       ],
