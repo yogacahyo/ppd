@@ -20,3 +20,6 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
+[00:05:51.356] Server  LOG     ✓ Compiled in 787ms
+[00:05:52.103] Server  LOG     ✓ Compiled in 87ms
+[00:05:58.500] Server  LOG     ✓ Compiled in 49ms
